@@ -1,11 +1,11 @@
-About r-ggmice
-==============
+About r-ggmice-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggmice-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/amices/ggmice, https://amices.org/, https://amices.org/ggmice/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggmice-feedstock/blob/main/LICENSE.txt)
 
 Summary: Enhance a 'mice' imputation workflow with visualizations for incomplete and/or imputed data. The plotting functions produce 'ggplot' objects which may be easily manipulated or extended. Use 'ggmice' to inspect missing data, develop imputation models, evaluate algorithmic convergence, or compare observed versus imputed data.
 
