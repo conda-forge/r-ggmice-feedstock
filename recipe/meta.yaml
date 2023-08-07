@@ -1,4 +1,4 @@
-{% set version = '0.0.1' %}
+{% set version = "0.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggmice_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggmice/ggmice_{{ version }}.tar.gz
-  sha256: 155b0724abcb6c2011d5a2130b772aeaadd0111d883a3b0c85a8532b3fc65a19
+  sha256: 708824871743487e3e3f977e72e4d590e6ec9eb22e1f3f33c8a363971042cb91
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -53,10 +53,8 @@ test:
 about:
   home: https://github.com/amices/ggmice, https://amices.org/, https://amices.org/ggmice/
   license: GPL-3.0-or-later
-  summary: Enhance a 'mice' imputation workflow with visualizations for incomplete and/or imputed
-    data. The plotting functions produce 'ggplot' objects which may be easily manipulated
-    or extended. Use 'ggmice' to inspect missing data, develop imputation models, evaluate
-    algorithmic convergence, or compare observed versus imputed data.
+  summary: Enhance a 'mice' imputation workflow with visualizations for incomplete and/or imputed data. The plotting functions produce 'ggplot' objects which may be easily manipulated or extended. Use 'ggmice' to inspect missing data, develop imputation models, evaluate algorithmic convergence, or compare observed versus
+    imputed data.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
